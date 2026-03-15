@@ -244,8 +244,9 @@ const menuData = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded - Initializing Menu');
     const navbar = document.querySelector('.navbar');
-    
+
     // Add scroll effect on navbar
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -254,6 +255,29 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove('scrolled');
         }
     });
+
+    // Mobile Menu Toggle Logic
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (mobileMenuToggle && navLinks) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close menu when a link is clicked
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
 
     // Add subtle reveal animations
     const observer = new IntersectionObserver((entries, obs) => {
@@ -277,9 +301,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuContent = document.getElementById('menuContent');
 
     function renderMenu(categoryKey) {
-        if (!menuContent) return;
+        console.log('Rendering Menu for:', categoryKey);
+        if (!menuContent) {
+            console.error('menuContent element NOT found!');
+            return;
+        }
         menuContent.innerHTML = ''; // Clear current
-        
+
         const categories = menuData[categoryKey];
         if (!categories) return;
 
@@ -287,6 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapper.className = 'menu-category-wrapper active';
 
         categories.forEach(subCat => {
+            console.log('Processing subcategory:', subCat.subcategory, 'Items:', subCat.items ? subCat.items.length : 'UNDEFINED');
             // Subcategory title
             const subTitle = document.createElement('h3');
             subTitle.className = 'sub-category-title';
@@ -296,6 +325,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Grid for items
             const grid = document.createElement('div');
             grid.className = 'menu-grid';
+
+            if (!subCat.items || subCat.items.length === 0) {
+                console.warn('NO ITEMS found for subcategory:', subCat.subcategory);
+            }
 
             subCat.items.forEach(item => {
                 const itemCard = document.createElement('div');
@@ -318,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // We simulate a price or dots space
                 const header = document.createElement('div');
                 header.className = 'menu-item-header';
-                
+
                 const title = document.createElement('div');
                 title.className = 'menu-item-title';
                 title.textContent = item.name;
@@ -333,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     desc.textContent = item.desc;
                     contentWrapper.appendChild(desc);
                 }
-                
+
                 itemCard.appendChild(contentWrapper);
 
                 grid.appendChild(itemCard);
@@ -354,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
             tabBtns.forEach(b => b.classList.remove('active'));
             // Add to clicked
             btn.classList.add('active');
-            
+
             // Render specific category
             const target = btn.getAttribute('data-target');
             renderMenu(target);
