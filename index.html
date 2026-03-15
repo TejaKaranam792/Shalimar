@@ -3,496 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Shalimar Restaurant | Premium Hyderabadi Biryani in Vizianagaram</title>
-    <meta name="description" content="Vizianagaram's Premier Hyderabadi Biryani Destination. Authentic Dum Biryani, Curries, and Private Dining at Hotel Shalimar Restaurant.">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
+    <title>Hotel Shalimar | Premium Hyderabadi Biryani</title>
+    <meta name="description" content="Experience Vizianagaram's premier dining experience at Hotel Shalimar. Specializing in authentic, luxury Hyderabadi Biryani.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-content">
-            <div class="logo">
-                <div class="logo-mark"><span class="logo-s">S</span></div>
-                <div class="logo-text">
-                    <span class="hotel">Hotel</span>
-                    <span class="shalimar">SHALIMAR</span>
-                </div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="#contact" class="btn btn-outline">Book Table</a>
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/919666690886" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-pattern"></div>
-        <div class="container hero-content fade-up">
-            <span class="subtitle">Experience Royal Cuisine</span>
-            <h1 class="headline">Vizianagaram’s Premier<br><span class="text-gold">Hyderabadi Biryani</span> Destination</h1>
-            <p class="subtext">Authentic Dum Biryani | All You Can Eat | Private Dining</p>
-            <div class="hero-buttons">
-                <a href="#menu" class="btn btn-primary">View Menu</a>
-                <a href="tel:+919666690886" class="btn btn-solid-red"><i class="fas fa-phone-alt"></i> Call Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Banner -->
-    <section class="services-banner">
-        <div class="container services-grid">
-            <div class="service-item fade-up" style="transition-delay: 0.1s;">
-                <div class="service-icon"><i class="fas fa-utensils"></i></div>
-                <span>All You Can Eat</span>
-            </div>
-            <div class="service-item fade-up" style="transition-delay: 0.2s;">
-                <div class="service-icon"><i class="fas fa-glass-cheers"></i></div>
-                <span>Happy Hour Food</span>
-            </div>
-            <div class="service-item fade-up" style="transition-delay: 0.3s;">
-                <div class="service-icon"><i class="fas fa-building"></i></div>
-                <span>Private Dining Room</span>
-            </div>
-            <div class="service-item fade-up" style="transition-delay: 0.4s;">
-                <div class="service-icon"><i class="fas fa-users"></i></div>
-                <span>Family Friendly</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container about-container">
-            <div class="about-image fade-in-left">
-                <div class="image-wrapper">
-                    <!-- Placeholder for image, using CSS gradient as fallback if img fails -->
-                    <div class="img-placeholder"></div>
-                    <div class="experience-badge">
-                        <span class="number">1200+</span>
-                        <span class="text">Positive Reviews</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about-content fade-in-right">
-                <h2 class="section-title">A Legacy of <span class="text-gold">Authentic</span> Hyderabadi Cuisine</h2>
-                <div class="divider"></div>
-                <p>Hotel Shalimar Restaurant is renowned for bringing the royal flavors of Hyderabad to Vizianagaram. Popular among both locals and tourists, we pride ourselves on delivering an unforgettable culinary experience.</p>
-                <p>Our hallmark is the traditional slow-cooked Dum method. Each dish is carefully crafted with the perfect blend of spices, tender meat, and aromatic basmati rice, ensuring every bite is a celebration of flavor.</p>
-                
-                <ul class="features-list">
-                    <li><i class="fas fa-check-circle text-gold"></i> Traditional slow-cooked Dum method</li>
-                    <li><i class="fas fa-check-circle text-gold"></i> Premium ingredients and authentic spices</li>
-                    <li><i class="fas fa-check-circle text-gold"></i> Popular among locals and tourists</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu section-padding bg-cream">
+    <header class="navbar">
         <div class="container">
-            <!-- Vibe Carousel (Categories) -->
-            <div class="vibe-header flex-between align-center fade-up">
-                <h2 class="section-title text-dark" style="font-family: var(--font-sans); font-size: 2rem; margin-bottom: 0;">Choose your vibe, we'll bring the bite</h2>
-                <div class="nav-arrows">
-                    <button class="arrow-btn" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
-                    <button class="arrow-btn" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-
-            <div class="vibe-carousel fade-up">
-                <div class="vibe-card" style="background-image: url('https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=800&auto=format&fit=crop');">
-                    <div class="vibe-overlay"></div>
-                    <h3>Box Biryani-New Launch Non Veg</h3>
-                </div>
-                <div class="vibe-card" style="background-image: url('https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=800&auto=format&fit=crop');">
-                    <div class="vibe-overlay"></div>
-                    <h3>Veg Starter</h3>
-                </div>
-                <div class="vibe-card" style="background-image: url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800&auto=format&fit=crop');">
-                    <div class="vibe-overlay"></div>
-                    <h3>Day Special</h3>
-                </div>
-                <div class="vibe-card" style="background-image: url('https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=800&auto=format&fit=crop');">
-                    <div class="vibe-overlay"></div>
-                    <h3>Extra</h3>
-                </div>
-                <div class="vibe-card" style="background-image: url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800&auto=format&fit=crop');">
-                    <div class="vibe-overlay"></div>
-                    <h3>Veg Biriyani</h3>
-                </div>
-            </div>
-
-            <!-- Menu Grid -->
-            <div class="menu-grid-styled mt-5">
-                <!-- Card 1 -->
-                <div class="menu-item-card fade-up">
-                    <div class="item-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93cb0?q=80&w=600&auto=format&fit=crop" alt="Butter Chicken Curry">
-                    </div>
-                    <div class="item-details">
-                        <div class="diet-icon non-veg"><i class="fas fa-caret-up"></i></div>
-                        <h4>Butter Chicken Curry</h4>
-                        <p class="desc">Tandoori chicken tikka pieces are cooked in a buttery gravy and our...</p>
-                        <div class="price-action">
-                            <span class="price-tag">₹365</span>
-                            <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="menu-item-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="item-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=600&auto=format&fit=crop" alt="Lemon Chicken">
-                    </div>
-                    <div class="item-details">
-                        <div class="diet-icon non-veg"><i class="fas fa-caret-up"></i></div>
-                        <h4>Lemon Chicken</h4>
-                        <p class="desc">Fresh lemon and our in-house Andra spice mix are used to cook boneles...</p>
-                        <div class="price-action">
-                            <span class="price-tag">₹360</span>
-                            <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="menu-item-card fade-up" style="transition-delay: 0.2s;">
-                    <div class="item-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=600&auto=format&fit=crop" alt="Non Veg Tandoori Today Spl">
-                    </div>
-                    <div class="item-details">
-                        <div class="diet-icon non-veg"><i class="fas fa-caret-up"></i></div>
-                        <h4>Non Veg Tandoori Today Spl</h4>
-                        <p class="desc">A grand assortment of tandoori chicken, kebabs, and tikka with mint chutney.</p>
-                        <div class="price-action">
-                            <span class="price-tag">₹410</span>
-                            <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="menu-item-card fade-up" style="transition-delay: 0.3s;">
-                    <div class="item-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=600&auto=format&fit=crop" alt="Prawns Ghee Roast">
-                    </div>
-                    <div class="item-details">
-                        <div class="diet-icon non-veg"><i class="fas fa-caret-up"></i></div>
-                        <h4>Prawns Ghee Roast</h4>
-                        <p class="desc">Juicy prawns roasted in rich pure desi ghee with Mangalorean spices.</p>
-                        <div class="price-action">
-                            <span class="price-tag">₹445</span>
-                            <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="menu-item-card fade-up">
-                    <div class="item-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=600&auto=format&fit=crop" alt="Special Mutton Biryani">
-                    </div>
-                    <div class="item-details">
-                        <div class="diet-icon non-veg"><i class="fas fa-caret-up"></i></div>
-                        <h4>Veg Manchurian Biryani</h4>
-                        <p class="desc">Aromatic basmati rice cooked with spicy and tangy vegetable manchurian.</p>
-                        <div class="price-action">
-                            <span class="price-tag">₹360</span>
-                            <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Card 6 -->
-                <div class="menu-item-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="item-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=600&auto=format&fit=crop" alt="Shahi Paneer">
-                    </div>
-                    <div class="item-details">
-                        <div class="diet-icon veg"><i class="fas fa-circle"></i></div>
-                        <h4>Shahi Paneer</h4>
-                        <p class="desc">Soft paneer cubes in a rich, creamy, and royal cashew tomato gravy.</p>
-                        <div class="price-action">
-                            <span class="price-tag">₹320</span>
-                            <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <a href="#" class="logo">
+                <span class="logo-gold">H</span>otel <span class="logo-gold">S</span>halimar
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#contact" class="nav-btn-highlight">Book a Table</a>
         </div>
-    </section>
+    </header>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="reviews section-padding">
-        <div class="container">
-            <div class="section-header fade-up text-center">
-                <span class="subtitle">What People Say</span>
-                <h2 class="section-title">Loved by <span class="text-gold">Thousands</span></h2>
-                <div class="divider center"></div>
+    <main>
+        <section id="home" class="hero">
+            <!-- Background Image with Overlay -->
+            <div class="hero-bg">
+                <!-- Using the generated local image -->
+                <img src="file:///C:/Users/tejak/.gemini/antigravity/brain/5cf806b2-4686-41da-91e6-3566c650c2b2/steaming_hyderabadi_biryani_1773551927089.png" alt="Steaming Hyderabadi Biryani" class="hero-image">
+                <div class="hero-overlay"></div>
             </div>
 
-            <div class="rating-highlights fade-up">
-                <div class="rating-card glass-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                    <h3>Google</h3>
-                    <p>4+ Stars</p>
-                </div>
-                <div class="rating-card glass-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                    <h3>Justdial</h3>
-                    <p>4/5 (1,373 votes)</p>
-                </div>
-                <div class="rating-card glass-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                    <h3>Zomato</h3>
-                    <p>4.6/5</p>
+            <!-- Hero Content -->
+            <div class="container hero-content">
+                <span class="subtitle">Vizianagaram's Premier Dining Experience</span>
+                <h1 class="main-title">The Royal Taste of <br><span class="text-gold">Hyderabadi Biryani</span></h1>
+                <p class="description">
+                    Indulge in a symphony of rich spices, tender meats, and saffron-infused perfection. 
+                    Crafted with legacy, served with luxury.
+                </p>
+                <div class="cta-group">
+                    <a href="#order" class="btn btn-solid-gold">Order Now</a>
+                    <a href="#menu" class="btn btn-glass">View Menu</a>
                 </div>
             </div>
+        </section>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-up">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p class="review-text">"Perfect for tasty food and value for money. The ambiance is great and the traditional flavors are maintained perfectly."</p>
-                    <div class="reviewer">
-                        <div class="avatar">R</div>
-                        <div class="reviewer-info">
-                            <h4>Ravi K.</h4>
-                            <span class="source">Local Guide</span>
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section fade-in-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="subtitle">Culinary Masterpieces</span>
+                    <h2>Our <span class="text-gold">Menu</span></h2>
+                    <p class="description mx-auto">Explore authentic flavors crafted with perfection.</p>
+                </div>
+
+                <!-- Interactive Menu Tabs -->
+                <div class="menu-tabs" id="menuTabs">
+                    <button class="tab-btn active" data-target="starters">Starters</button>
+                    <button class="tab-btn" data-target="regular">Main Course</button>
+                    <button class="tab-btn" data-target="biryani">Biryani</button>
+                    <button class="tab-btn" data-target="breads-rice">Breads & Rice</button>
+                    <button class="tab-btn" data-target="extras">Snacks & Desserts</button>
+                </div>
+
+                <!-- Dynamic Menu Container -->
+                <div class="menu-content" id="menuContent">
+                    <!-- Javascript will inject layout here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section fade-in-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="subtitle">Our Story</span>
+                        <h2>About <span class="text-gold">Hotel Shalimar</span></h2>
+                        <p class="description">
+                            Hotel Shalimar is a highly-rated, popular casual dining restaurant located near Municipal Park on Begusarai Road in Vizianagaram (Cantonment), Andhra Pradesh. Known for our exceptional value for money and unforgettable taste, we specialize in authentic Hyderabadi Biryani, flavorful North Indian curries, and tantalizing Chinese cuisine.
+                        </p>
+                        <p class="description">
+                            Whether you're craving our highly recommended Chicken Dum Biryani, Mutton Fry Biryani, Prawns Biryani, or our sizzling Tandoori specialties, every dish is crafted with passion and perfection. We offer comfortable dine-in experiences, convenient takeaways, and fast delivery through Swiggy and Zomato.
+                        </p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-box">
+                            <h3 class="feature-title">Dining Options</h3>
+                            <p class="feature-desc">Casual Dining, Takeaway & Delivery</p>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-up" style="transition-delay: 0.1s;">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p class="review-text">"Delicious food and service. We hosted a family get-together here and the private dining experience was flawless."</p>
-                    <div class="reviewer">
-                        <div class="avatar">S</div>
-                        <div class="reviewer-info">
-                            <h4>Sneha M.</h4>
-                            <span class="source">Google Review</span>
+                        <div class="feature-box">
+                            <h3 class="feature-title">Specialties</h3>
+                            <p class="feature-desc">Biryani, North Indian, Chinese & Tandoori</p>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card fade-up" style="transition-delay: 0.2s;">
-                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                    <p class="review-text">"Best Apollo Fish and Badshah Biryani in town! It's a must-visit destination whenever we are in Vizianagaram."</p>
-                    <div class="reviewer">
-                        <div class="avatar">V</div>
-                        <div class="reviewer-info">
-                            <h4>Vikram S.</h4>
-                            <span class="source">Zomato Foodie</span>
+                        <div class="feature-box">
+                            <h3 class="feature-title">Delivery Partners</h3>
+                            <p class="feature-desc">Swiggy & Zomato</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faqs section-padding" id="faqs">
-        <div class="container border-top pt-5">
-            <div class="section-header fade-up text-center">
-                <span class="subtitle">Got Questions?</span>
-                <h2 class="section-title">Frequently Asked <span class="text-gold">Questions</span></h2>
-                <div class="divider center"></div>
-            </div>
-            <div class="faq-accordion fade-up">
-                <div class="faq-item">
-                    <button class="faq-question">1. Does Hotel Shalimar offer home delivery services? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Most non-veg thali restaurants offer home delivery services. However, it is recommended to contact Hotel Shalimar in Vizianagaram Cantonment for further details.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">2. How can I place an order at Hotel Shalimar? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>To place an order at Hotel Shalimar, you can call them on the given number during their working hours from Monday:- 11:00 am - 10:30 pm, Tuesday:- 11:00 am - 10:30 pm, Wednesday:- 11:00 am - 10:30 pm, Thursday:- 11:00 am - 10:30 pm, Friday:- 11:00 am - 10:30 pm, Saturday:- 11:00 am - 10:30 pm, Sunday:- 11:00 am - 10:30 pm.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">3. Are desserts included in the thalis? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Most non-veg thalis restaurants have desserts included in their thalis. You can contact Hotel Shalimar for more details on this.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">4. Does Hotel Shalimar offer catering services for events? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>Some non-veg thali restaurants may offer catering services while some may not. It is suggested that you get in touch with Hotel Shalimar in Vizianagaram for further information.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">5. What are the different types of thalis one can find? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>The different types of thali at non-veg restaurants include chicken thali, mutton thali, seafood thali, etc.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">6. Does Hotel Shalimar have outdoor seating? <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer">
-                        <p>For more details on this, you must contact Hotel Shalimar on the number provided.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact & Hours Section -->
-    <section id="contact" class="contact section-padding">
-        <div class="container container-flex">
-            <!-- Info & Hours -->
-            <div class="contact-info fade-in-left">
-                <div class="section-header">
-                    <span class="subtitle">Visit Us</span>
-                    <h2 class="section-title">Get in <span class="text-gold">Touch</span></h2>
-                    <div class="divider"></div>
-                </div>
-                
-                <div class="info-blocks">
-                    <div class="info-item">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="details">
-                            <h4>Location</h4>
-                            <p>Begusarai Rd, near Municipal Park,<br>Cantonment, Vizianagaram,<br>Andhra Pradesh 535003</p>
-                        </div>
+        <!-- Contact & Booking Section -->
+        <section id="contact" class="contact-section fade-in-section">
+            <div class="container text-center">
+                <span class="subtitle">Visit Us</span>
+                <h2>Book Your <span class="text-gold">Table</span></h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Location</h3>
+                        <p>Door No 2b, Near Municipal Park,<br>Begusarai Road, Cantonment,<br>Vizianagaram-535003</p>
                     </div>
-                    <div class="info-item">
-                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="details">
-                            <h4>Phone</h4>
-                            <p><a href="tel:+919666690886">+91 96666 90886</a></p>
-                        </div>
+                    <div class="contact-info">
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Sunday<br>11:00 AM to 10:30 PM</p>
                     </div>
-                    <div class="info-item">
-                        <div class="icon"><i class="fas fa-clock"></i></div>
-                        <div class="details">
-                            <h4>Opening Hours</h4>
-                            <p><strong>Friday – Thursday:</strong> 10:00 AM – 11:00 PM</p>
-                            <p class="small-text note text-red">*Holiday hours may vary</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Google Maps Embed -->
-                <div class="map-container glass-card">
-                    <iframe src="https://maps.google.com/maps?q=Begusarai+Rd,+near+Municipal+Park,+Cantonment,+Vizianagaram,+Andhra+Pradesh+535003&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-            <!-- Reservation Form -->
-            <div class="contact-form-wrapper fade-in-right glass-card">
-                <div class="form-header">
-                    <h3>Reserve a Table</h3>
-                    <p>Book your premium dining experience</p>
-                </div>
-                <form id="reservationForm" class="reservation-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" required placeholder="+91 XXXXX XXXXX">
-                    </div>
-                    <div class="row">
-                        <div class="form-group half">
-                            <label for="date">Date</label>
-                            <input type="date" id="date" required>
-                        </div>
-                        <div class="form-group half">
-                            <label for="guests">Guests</label>
-                            <select id="guests" required>
-                                <option value="1">1 Person</option>
-                                <option value="2" selected>2 People</option>
-                                <option value="3">3 People</option>
-                                <option value="4">4 People</option>
-                                <option value="5">5 People</option>
-                                <option value="6+">6+ People</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary submit-btn">Confirm Reservation</button>
-                    <p class="form-success-msg hidden">Your table has been requested. We will contact you to confirm!</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-top pattern-overlay">
-            <div class="container footer-grid">
-                <div class="footer-col brand-col">
-                    <div class="logo">
-                        <div class="logo-mark"><span class="logo-s">S</span></div>
-                        <div class="logo-text">
-                            <span class="hotel">Hotel</span>
-                            <span class="shalimar">SHALIMAR</span>
-                        </div>
-                    </div>
-                    <p class="footer-bio">Vizianagaram’s premier destination for authentic Hyderabadi Dum Biryani and traditional curries since establishment.</p>
-                </div>
-                
-                <div class="footer-col links-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Our Menu</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col social-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
+                    <div class="contact-info">
+                        <h3>Contact for Booking</h3>
+                        <p class="contact-phone">96666 90886</p>
+                        <a href="tel:9666690886" class="btn btn-solid-gold mt-1">Call Now</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="footer-bottom">
-            <div class="container flex-between">
-                <p>&copy; 2026 Hotel Shalimar Restaurant. All Rights Reserved.</p>
-                <a href="#" class="admin-link">Own this business?</a>
-            </div>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2026 Hotel Shalimar, Vizianagaram. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
